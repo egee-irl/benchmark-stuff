@@ -7,6 +7,6 @@ mkdir -p ~/.phoronix-test-suite/test-suites/local/eg-vps/
 cp -f pts/test-suites/local/eg-vps/suite-definition.xml ~/.phoronix-test-suite/test-suites/local/eg-vps/suite-definition.xml
 
 phoronix-test-suite batch-install eg-vps
-echo "INFO BEGINNING TEST RUN..."
-sleep 8
+echo "BEGINNING TEST RUN..."
+sleep 5
 phoronix-test-suite batch-run eg-vps
