@@ -3,22 +3,22 @@
 <!-- Current State: WORKING -->
 <PhoronixTestSuite>
   <SuiteInformation>
-    <Title>The Compilation Bench</Title>
+    <Title>The Compession Bench</Title>
     <Version>1.0.0</Version>
     <TestType>System</TestType>
     <Description>One Sweet Suite</Description>
-    <Maintainer>Egee</Maintainer>
+    <Maintainer>egee</Maintainer>
   </SuiteInformation>
   <Execute>
-    <Test>pts/build-imagemagick</Test>
+    <Test>pts/compress-7zip-1.7.1</Test>
   </Execute>
   <Execute>
-    <Test>pts/build-apache</Test>
+    <Test>pts/compress-gzip-1.2.0</Test>
   </Execute>
   <Execute>
-    <Test>pts/build-ffmpeg</Test>
+    <Test>pts/compress-pbzip2-1.5.0</Test>
   </Execute>
   <Execute>
-    <Test>pts/build-mplayer</Test>
+    <Test>pts/compres-xz-1.1.0</Test>
   </Execute>
 </PhoronixTestSuite>
