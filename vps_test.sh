@@ -1,5 +1,5 @@
 #!/bin/env bash
-export FORCE_TIMES_TO_RUN
+export FORCE_TIMES_TO_RUN=1
 
 cp -f pts/test-suites/local/eg-vps/suite-definition.xml ~/.phoronix-test-suite-benchmark/test-suites/local/eg-vps/suite-definition.xml
 
