@@ -1,5 +1,7 @@
 #!/bin/env bash
 export FORCE_TIMES_TO_RUN=1
+set -eu
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 cp -f pts/test-suites/local/eg-vps/suite-definition.xml ~/.phoronix-test-suite-benchmark/test-suites/local/eg-vps/suite-definition.xml
 
