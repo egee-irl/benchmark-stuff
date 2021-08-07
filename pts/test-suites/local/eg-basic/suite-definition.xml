@@ -20,11 +20,6 @@
     <Description>Test: 1000 Files, 1MB Size</Description>
   </Execute>
   <Execute>
-    <Test>pts/sockperf-1.0.1</Test>
-    <Arguments>throughput</Arguments>
-    <Description>Test: Throughput</Description>
-  </Execute>
-  <Execute>
     <Test>pts/mbw-1.0.0</Test>
     <Arguments>-t0 1024</Arguments>
     <Description>Test: Memory Copy - Array Size: 1024 MiB</Description>
