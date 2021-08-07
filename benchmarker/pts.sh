@@ -8,3 +8,5 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew install php
 brew install phoronix-test-suite
 yes y | phoronix-test-suite
+
+cp -rf pts/ ~/.phoronix-test-suite-benchmark/
