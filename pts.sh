@@ -9,4 +9,5 @@ brew install php
 brew install phoronix-test-suite
 yes y | phoronix-test-suite
 
-cp -rf pts/ ~/.phoronix-test-suite-benchmark/
+cp -f pts/user-config.xml ~/.phoronix-test-suite-benchmark/pts/user-config.xml
+cp -rf pts/test-suites/local/* ~/.phoronix-test-suite/test-suites/local/
