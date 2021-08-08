@@ -24,5 +24,6 @@
   <Execute>
     <Test>pts/supertuxkart</Test>
     <Arguments>--screensize=1920x1080 --fullscreen --enable-glow --enable-bloom --enable-light-shaft --enable-dof --disable-gi --enable-gfx --enable-motion-blur --enable-mlaa --enable-ssao --enable-ibl --enable-hd-textures --enable-dynamic-lights --anisotropic=16 --shadows=512 --numkarts=8 --track=gran_paradiso_island</Arguments>
+    <Description>Resolution: 1920 x 1080 - Mode: Fullscreen - Graphics Effects: High - Karts: 8 - Scene: Gran Paradiso Island</Description>
   </Execute>
 </PhoronixTestSuite>
