@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.4.0-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>2021-07-19-1911</Title>
+    <LastModified>2021-07-19 19:12:26</LastModified>
+    <TestClient>Phoronix Test Suite v10.4.0 (Ibestad)</TestClient>
+    <Description>AMD Ryzen 7 4800H testing with a LENOVO LNVNB161216 (FSCN11WW BIOS) and NVIDIA GeForce GTX 1660 Ti 6GB on Solus 4.3 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>2021-07-19 19:11</Identifier>
+    <Hardware>Processor: AMD Ryzen 7 4800H @ 2.90GHz (8 Cores / 16 Threads), Motherboard: LENOVO LNVNB161216 (FSCN11WW BIOS), Chipset: AMD Renoir Root Complex, Memory: 16GB, Disk: 512GB SAMSUNG MZVLB512HBJQ-000L2 + Samsung SSD 980 500GB + 500GB Portable SSD T5, Graphics: NVIDIA GeForce GTX 1660 Ti 6GB, Audio: NVIDIA TU116 HD Audio, Network: Realtek RTL8111/8168/8411 + Intel Wi-Fi 6 AX200</Hardware>
+    <Software>OS: Solus 4.3, Kernel: 5.13.2-188.current (x86_64), Desktop: GNOME Shell 40.3, Display Server: X Server 1.20.12, Display Driver: NVIDIA 465.31, OpenGL: 4.6.0, Compiler: GCC 10.3.0, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>egee</User>
+    <TimeStamp>2021-07-19 19:11:43</TimeStamp>
+    <TestClientVersion>10.4.0</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-solus-linux --enable-__cxa_atexit --enable-cet --enable-clocale=gnu --enable-default-ssp --enable-gnu-indirect-function --enable-gold --enable-languages=c,c++,fortran --enable-ld=default --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --target=x86_64-solus-linux --with-arch_32=i686 --with-gcc-major-version-only --with-gnu-ld --with-linker-hash-style=gnu --with-multilib-list=m32,m64","cpu-scaling-governor":"acpi-cpufreq ondemand (Boost: Enabled)","cpu-microcode":"0x8600104","kernel-extra-details":"Transparent Huge Pages: madvise","environment-variables":"__GL_MaxFramesAllowed=1","security":"itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Full AMD retpoline IBPB: conditional IBRS_FW STIBP: conditional RSB filling + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/mbw-1.0.0</Identifier>
+    <Title>MBW</Title>
+    <AppVersion>2018-09-08</AppVersion>
+    <Arguments>-t0 1024</Arguments>
+    <Description>Test: Memory Copy - Array Size: 1024 MiB</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>2021-07-19 19:11</Identifier>
+        <Value>10718.591</Value>
+        <RawString>10767.204:10752.889:10635.679</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"},"test-run-times":"10.27:10.09:10.19"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
