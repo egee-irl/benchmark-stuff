@@ -5,9 +5,9 @@
 set -e
 SUITE_NAME="$2"
 export FORCE_TIMES_TO_RUN=1
-installed=$(which phoronix-test-suite)
+INSTALLED=$(which phoronix-test-suite)
 
-if [[ ! -f ${installed} ]]; then eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"; fi
+if [[ ! -f ${INSTALLED} ]]; then eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"; fi
 
 if [[ $1 = -i ]]; then
     mkdir -p "${HOME}/.phoronix-test-suite/test-suites/local/${SUITE_NAME}"
@@ -31,10 +31,19 @@ elif [[ $1 = -b ]]; then
     mkdir -p "pts/test-suites/local/${SUITE_NAME}"
     cp -R "${HOME}/.phoronix-test-suite/test-suites/local/${SUITE_NAME}/suite-definition.xml" \
           "pts/test-suites/local/${SUITE_NAME}/suite-definition.xml"
+elif [[ $1 = -c ]]; then
+    USER=$2
+    IP=$3
+    CONNECTION_STRING="$USER@$IP"
+    rsync -rv "$CONNECTION_STRING:/home/$USER/.phoronix-test-suite/test-results/*" .test-results/
+    TEST_RESULTS=$(ls .test-results)
+    echo ""; echo "Available Test Results:";
+    echo "${TEST_RESULTS}"
 else
     echo "Available options:"
     echo "-i: install a test suite."
     echo "-r: run a test suite."
     echo "-l: list test suites."
+    echo "-c: copy test results from a remote machine for viewing."
     echo "-b: backport test suite from pts install to benchmark git repo."
 fi
