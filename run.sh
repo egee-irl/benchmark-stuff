@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-##############################################
-# This is the entry point for EgeeOS.         #
-# It ensures Salt is installed and configured. #
+#################################################
+# A helper script to manage benchmarking stuff. #
 #################################################
 set -e
 SUITE_NAME="$2"
