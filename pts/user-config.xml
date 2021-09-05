@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--Phoronix Test Suite v10.2.2-->
+<!--Phoronix Test Suite v10.4.0-->
 <PhoronixTestSuite>
   <Options>
     <OpenBenchmarking>
@@ -54,7 +54,7 @@
     </ResultViewer>
     <BatchMode>
       <SaveResults>TRUE</SaveResults>
-      <OpenBrowser>FALSE</OpenBrowser>
+      <OpenBrowser>TRUE</OpenBrowser>
       <UploadResults>FALSE</UploadResults>
       <PromptForTestIdentifier>FALSE</PromptForTestIdentifier>
       <PromptForTestDescription>FALSE</PromptForTestDescription>
@@ -72,7 +72,7 @@
       <ProxyPassword></ProxyPassword>
     </Networking>
     <Server>
-      <RemoteAccessPort>RANDOM</RemoteAccessPort>
+      <RemoteAccessPort>8080</RemoteAccessPort>
       <Password></Password>
       <WebSocketPort>RANDOM</WebSocketPort>
       <AdvertiseServiceZeroConf>TRUE</AdvertiseServiceZeroConf>
